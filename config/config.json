@@ -1,0 +1,33 @@
+{
+  "server":{
+    "host": "127.0.0.1",
+    "port": 8080
+  },
+
+  "facebox": {
+    "model":"models/face_detector_uint8.pb",
+    "config":"models/face_detector.pbtxt"
+  },
+
+  "emotion_caffe": {
+    "model":"models/emotion.caffemodel",
+    "config":"models/emotion.prototxt"
+  },
+
+  "emotion_onnx": {
+    "model":"models/emotion.onnx"
+  },
+
+  "gender": {
+    "model":"models/gender.caffemodel",
+    "config":"models/gender.prototxt"
+  },
+
+  "age": {
+    "model":"models/age.caffemodel",
+    "config":"models/age.prototxt"
+  }
+
+
+
+}
