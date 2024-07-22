@@ -5,3 +5,6 @@ to launch the application
 
 gocv installation guide
 `https://github.com/hybridgroup/gocv`
+
+dowload models 
+`https://drive.google.com/file/d/1dkPjq1V66ckbgTxACV0P12XkV82P-VSP/view`

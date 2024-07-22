@@ -8,7 +8,7 @@ func (a *App) GetFacePos(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
@@ -26,7 +26,7 @@ func (a *App) GetEmotionONNX(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
@@ -44,7 +44,7 @@ func (a *App) GetCaffeEmotion(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
@@ -62,7 +62,7 @@ func (a *App) GetAge(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
@@ -80,7 +80,7 @@ func (a *App) GetGender(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
@@ -98,7 +98,7 @@ func (a *App) GetFullInfo(c *fiber.Ctx) error {
 
 	mat, err := extractImageFrom(c)
 	if err != nil {
-		c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"error": err.Error(),
 		})
 	}
